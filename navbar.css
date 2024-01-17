@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    scroll-behavior: smooth;
+    background-color: blueviolet;
+}
+
+/* .nav-logo{
+    display: none;
+}
+.nav-logo2{
+    display: block;
+}
+
+#navbar{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.nav-left, .nav-middle{
+    display: flex;
+    justify-content: center;
+  gap: 20px;
+    width: 30%;
+}
+
+.nav-right{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    width: 30%;
+}
+
+.nav-middle a{
+ color: white;
+ text-decoration: none;
+} */
+
+
+/* Initial styles for navbar */
+#navbar {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: background-color 0.3s; /* Smooth background color transition */
+  }
+  
+  .nav-left,
+  .nav-middle,
+  .nav-right {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 30%;
+  }
+  
+  .nav-right {
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .nav-middle a {
+    color: white;
+    text-decoration: none;
+  }
+  .nav-logo2 {
+    display: block; /* Display nav-logo2 in sticky navbar */
+    margin-left: 20px;
+  }
+  .nav-logo{
+    display: none;
+  }
+
+  .social-icon span{
+    color: #ffffff;
+  }
+  .contact-btn {
+    padding: 10px 15px;
+    /* Style your button */
+
+    background-color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    font-weight: 700;
+    color: #520088;
+  }
+
+  /* normal hover effect */
+   .nav-middle a:hover,
+ .social-icon span:hover,
+ .contact-btn:hover,
+ #menu:hover{
+    color: #ffcc00;
+ }
+  
+  /* Styling for sticky navbar */
+  #navbar.sticky {
+    background-color: #ffffff; /* Background turns white */
+  }
+  
+  #navbar.sticky .nav-logo {
+    display: block; /* Hide nav-logo in sticky navbar */
+  }
+  
+  #navbar.sticky .nav-logo2 {
+    display: none; /* Display nav-logo2 in sticky navbar */
+  }
+  
+  #navbar.sticky .nav-middle a,
+  #navbar.sticky .social-icon span,
+  #navbar.sticky .contact-btn, #navbar.sticky #menu  {
+   color: #520088; /* Background color for links, icons, and button */ /* Text color for links, icons, and button */
+  }
+  #navbar.sticky .contact-btn{
+    background-color: #520088;
+    color: #ffffff;
+  }
+  /* Button hover effect */
+ 
+
+  #navbar.sticky .nav-middle a:hover,
+#navbar.sticky .social-icon span:hover,
+#navbar.sticky .contact-btn:hover,
+#navbar.sticky #menu:hover {
+  color: #ffcc00; /* Color on hover */
+}
+#navbar.sticky .contact-btn:hover {
+    background-color: #ffcc00; /* Button background color on hover */
+    color: #520088;
+  }
+  
+  #menu{
+    color:#ffff;
+    font-size: 1rem;
+    display: none;
+    cursor: pointer;
+  }
+/* dropdown menu */
+
+  .dropdown_menu{
+position: absolute;
+right: 2rem;
+top: 105%;
+width: 40%;
+background-color: #52008868;
+backdrop-filter: blur(10px);
+border-radius: 10px;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 20px;
+padding: 10% 0%;
+visibility: hidden;
+  }
+  
+
+      
+  .links{
+  
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   
+  }
+
+  .dropdown_menu a,.dropdown_menu i{
+  
+    text-decoration: none;
+    color: #ffffff;
+ 
+  }
+
+  .cont-btn{
+    color: white;
+
+    width: 80%;
+    padding: 10px 15px;
+    /* Style your button */
+
+    background-color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    font-weight: 700;
+    color: #520088;
+  }
+
+  .icons{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  padding: 5px;
+  max-width: 70%;
+  }
+  /* box */
+  .box{
+    height: 200vh;
+    width: 100vw;
+  }
+
+
+  
+  /* responsive */
+  @media(max-width:768px){
+    
+    #navbar .nav-middle a,
+    #navbar .social-icon span,
+    #navbar .contact-btn{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    #menu:hover{
+        color:white
+    }
+  }
+ 

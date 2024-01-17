@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 2px solid #ffcc00;
+  }
+  
+  html,
+  body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: "Open Sans", sans-serif;
+    background-color: #520088;
+  }
+  
+  /* Initial styles for navbar */
+#navbar {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: background-color 0.3s; /* Smooth background color transition */
+    z-index: 10;
+  }
+  
+  .nav-left,
+  .nav-middle,
+  .nav-right {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 30%;
+  }
+  
+  .nav-right {
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .nav-middle a {
+    color: white;
+    text-decoration: none;
+  }
+  .nav-logo2 {
+    display: block; /* Display nav-logo2 in sticky navbar */
+    margin-left: 20px;
+  }
+  .nav-logo{
+    display: none;
+  }
+  
+  .social-icon span{
+    color: #ffffff;
+  }
+  .contact-btn {
+    padding: 10px 15px;
+    /* Style your button */
+  
+    background-color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    font-weight: 700;
+    color: #520088;
+  }
+  
+  /* normal hover effect */
+   .nav-middle a:hover,
+  .social-icon span:hover,
+  .contact-btn:hover,
+  #menu:hover{
+    color: #ffcc00;
+  }
+  
+  /* Styling for sticky navbar */
+  #navbar.sticky {
+    background-color: #ffffff; /* Background turns white */
+    z-index: 10;
+  }
+  
+  #navbar.sticky .nav-logo {
+    display: block; /* Hide nav-logo in sticky navbar */
+  }
+  
+  #navbar.sticky .nav-logo2 {
+    display: none; /* Display nav-logo2 in sticky navbar */
+  }
+  
+  #navbar.sticky .nav-middle a,
+  #navbar.sticky .social-icon span,
+  #navbar.sticky .contact-btn, #navbar.sticky #menu  {
+   color: #520088; /* Background color for links, icons, and button */ /* Text color for links, icons, and button */
+  }
+  #navbar.sticky .contact-btn{
+    background-color: #520088;
+    color: #ffffff;
+  }
+  /* Button hover effect */
+  
+  
+  #navbar.sticky .nav-middle a:hover,
+  #navbar.sticky .social-icon span:hover,
+  #navbar.sticky .contact-btn:hover,
+  #navbar.sticky #menu:hover {
+  color: #ffcc00; /* Color on hover */
+  }
+  #navbar.sticky .contact-btn:hover {
+    background-color: #ffcc00; /* Button background color on hover */
+    color: #520088;
+  }
+  
+  #menu{
+    color:#ffff;
+    font-size: 1rem;
+    display: none;
+    cursor: pointer;
+  }
+  /* dropdown menu */
+  
+  .dropdown_menu{
+  position: absolute;
+  right: 2rem;
+  top: 105%;
+  width: 40%;
+  background-color: #520088;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10% 0%;
+  visibility: hidden;
+  }
+  
+  
+      
+  .links{
+  
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   
+  }
+  
+  .dropdown_menu a,.dropdown_menu i{
+  
+    text-decoration: none;
+    color: #ffffff;
+  
+  }
+  
+  .cont-btn{
+    color: white;
+  
+    width: 80%;
+    padding: 10px 15px;
+    /* Style your button */
+  
+    background-color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    font-weight: 700;
+    color: #520088;
+  }
+  
+  .icons{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  padding: 5px;
+  max-width: 70%;
+  }
+  /* box */
+  .box{
+    height: 200vh;
+    width: 100vw;
+  }
+  
+  
+  
+  /* responsive */
+  @media(max-width:768px){
+    
+    #navbar .nav-middle a,
+    #navbar .social-icon span,
+    #navbar .contact-btn{
+        display: none;
+    }
+  
+    #navbar #toggle-btn .menu{
+      color: #520088;
+    }
+  
+    #menu{
+        display: block;
+    }
+    #menu:hover{
+        color:white
+    }
+  }
+  
+
+  .empty{
+    height: 200vh;
+    width: auto;
+  }
+
+  /* css for hero section */
+
+  #main{
+    min-height: 100vh;
+    width: auto;
+    border: 2px solid #ffcc00;
+    color: #ffcc00;
+  }
+
+  h1{
+    display: inline-block;
+  }
+
+  
+#crafting{
+    
+    position: absolute;
+    left: 40%;
+    top: 55%;
+    transform: translateX(-50%);
+
+
+    stroke-dasharray:  1853;
+    z-index: 19;
+    stroke-dashoffset:  0;
+    animation: 6s fillSvg linear ;
+    animation-iteration-count: infinite;
+    z-index: 19;
+    animation: float 2s infinite;
+  
+  }
+  
+  #brandSvg{
+ 
+    position: absolute;
+    left: 51%;
+    top: 56%;
+   transform: translateX(-50%);    
+ 
+
+
+    height: 3.2vh;
+    stroke-dasharray: 1125;
+    z-index: 19;
+    stroke-dashoffset: 0;
+    animation: 6s fillSvg linear ;
+    animation-iteration-count: infinite;
+    z-index: 19;
+    scale: 1.5;
+   
+  
+  }
+  
+  #imSvg{
+    position: absolute;
+    position: absolute;
+    left: 59%;
+    top: 56%;
+   transform: translateX(-50%);
+    
+
+
+    height: 3.2vh;
+    stroke-dasharray: 1788;
+    z-index: 19;
+    stroke-dashoffset: 0;
+    animation: 6s fillSvg linear ;
+    animation-iteration-count: infinite;
+    z-index: 19;
+    animation: float 2s infinite;
+  
+  }
+  
+  .hand-bulb{
+    z-index: 2000;
+    position: absolute;
+    left: 44%;
+    top: 50%;
+    transform: translateX(-50%);
+
+    opacity: 100%;
+    scale:1.2;
+    opacity: 1;
+  }
+  
+  .herologo{
+    width:40%;
+    z-index: 20;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    opacity: 1;
+    top: 30%;
+  }
+  
+  #main-inside {
+    height: 100%;
+    width: 100%;
+  }
+  
+  #mainH1-2 {
+    z-index: 20;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  opacity: 1;
+  
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #520088;
+    font-family: "FieldworkGeoFat", sans-serif;
+    letter-spacing: 4px;
+  }
+
+  .main-p {
+    z-index: 20;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 58%;
+  
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #520088;
+    font-family: "Fjalla One", sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 40px;
+    opacity: 0%;
+  }
+  .image {
+    height: 120vh;
+    width: 100vw;
+    position: absolute;
+    background-image: url('./doorFrame\ \(2\).png');
+    background-size: cover;
+      background-position: center;
+  
+  }

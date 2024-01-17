@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hero Section with Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-left">
+        
+        <a href="./index.html"><svg class="nav-logo2" width="auto" height="40" viewBox="0 0 1081 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M87.5 154.5L0 6.5H35.5L87.5 99L127 34.5H87.5V6.5H174.5L87.5 154.5Z" fill="#fff"/>
+          <path d="M904.5 7.00049L992 155H956.5L904.5 62.5005L865 127H904.5V155L817.5 155L904.5 7.00049Z" fill="#fff"/>
+          <path d="M700.5 7L788 155H752.5L700.5 62.5L661 127H700.5V155L613.5 155L700.5 7Z" fill="#fff"/>
+          <path d="M334 33.5V6.5H389V153H361V33.5H334Z" fill="#fff"/>
+          <path d="M486 126V153H431V6.5H459V126H486Z" fill="#fff"/>
+          <path d="M583 126V153H528V6.5H556V126H583Z" fill="#fff"/>
+          <path d="M319 81C319 118.418 289.089 148.5 252.5 148.5C215.911 148.5 186 118.418 186 81C186 43.5822 215.911 13.5 252.5 13.5C289.089 13.5 319 43.5822 319 81Z" stroke="#fff" stroke-width="23"/>
+          <path d="M1081 0H1016.5C1042.9 27.2 1050 93 1050 93C1050 101.5 1056 25.5 1081 0Z" fill="#fff"/>
+          <circle cx="1048.5" cy="132" r="23" fill="#fff"/>
+          </svg></a> 
+        <a href="./index.html"><svg class="nav-logo" width="auto" height="40" viewBox="0 0 1081 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M87.5 154.5L0 6.5H35.5L87.5 99L127 34.5H87.5V6.5H174.5L87.5 154.5Z" fill="#51168B"/>
+          <path d="M904.5 7.00049L992 155H956.5L904.5 62.5005L865 127H904.5V155L817.5 155L904.5 7.00049Z" fill="#51168B"/>
+          <path d="M700.5 7L788 155H752.5L700.5 62.5L661 127H700.5V155L613.5 155L700.5 7Z" fill="#51168B"/>
+          <path d="M334 33.5V6.5H389V153H361V33.5H334Z" fill="#51168B"/>
+          <path d="M486 126V153H431V6.5H459V126H486Z" fill="#51168B"/>
+          <path d="M583 126V153H528V6.5H556V126H583Z" fill="#51168B"/>
+          <path d="M319 81C319 118.418 289.089 148.5 252.5 148.5C215.911 148.5 186 118.418 186 81C186 43.5822 215.911 13.5 252.5 13.5C289.089 13.5 319 43.5822 319 81Z" stroke="#51168B" stroke-width="23"/>
+          <path d="M1081 0H1016.5C1042.9 27.2 1050 93 1050 93C1050 101.5 1056 25.5 1081 0Z" fill="#51168B"/>
+          <circle cx="1048.5" cy="132" r="23" fill="#51168B"/>
+          </svg></a> 
+  
+      </div>
+      <div class="nav-middle">
+        
+        <a href="./contact.html">Contact Us</a>
+        <a href="./service.html">Services</a>
+        <a href="./gallery.html">Gallery</a>
+      </div>
+      <div class="nav-right">
+        <a href="#" class="social-icon"
+          ><span><i class="fa-brands fa-facebook"></i></span
+        ></a>
+  
+        <a href="#" class="social-icon"
+          ><span><i class="fa-brands fa-x-twitter"></i></span
+        ></a>
+    
+        <a href="#" class="social-icon"
+          ><span><i class="fa-brands fa-instagram"></i></span
+        ></a>
+       
+        <a href="#" class="social-icon"
+          ><span><i class="fa-brands fa-linkedin"></i></span
+        ></a>
+       
+        <button class="contact-btn">Contact Us</button>
+      </div>
+  
+     <div class="toggle-btn">
+       <i id="menu" class="fa-solid x-mark"></i>
+  </div>
+  
+      <div class="dropdown_menu">
+          <div class="links">
+              <a href="./about.html">About</a>
+          <a href="./service.html">Services</a>
+          <a href="./gellery2.html">Gallery</a>
+          </div>
+        <button class="cont-btn">Contact Us</button>
+         <div class="icons"> <a href="#" class="facebook"
+          ><span><i class="fa-brands fa-facebook"></i></span
+        ></a>
+   
+        <a href="#" class="twitter"
+          ><span><i class="fa-brands fa-x-twitter"></i></span
+        ></a>
+     
+        <a href="#" class="instagram"
+          ><span><i class="fa-brands fa-instagram"></i></span
+        ></a>
+     
+        <a href="#" class="linkedin"
+          ><span><i class="fa-brands fa-linkedin"></i></span
+        ></a></div>
+   
+      </div>
+  
+    </nav>
+  
+
+    <div id="main">
+      <svg id="crafting" width="150" height="50" viewBox="0 0 407 169" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M44.2871 40.102C45.0293 33.4221 59.688 22.5592 51.5445 16.2253C49.3906 14.5501 38.1358 18.5934 36.1446 19.6475C23.4716 26.3567 18.0979 38.8659 11.9926 51.0766C8.10347 58.8549 1.38225 78.0158 5.06957 87.0293C10.012 99.1107 31.8432 91.0174 40.0192 84.8855C42.2156 83.2382 48.5122 76.3372 42.7923 76.566C39.3791 76.7025 39.9363 86.4786 45.1721 86.4786C58.876 86.4786 79.6763 64.4861 83.3079 52.1387C87.1082 39.2177 84.0917 56.5839 85.904 58.1373C91.3201 62.7797 84.6399 71.3046 82.5212 77.7854C77.7441 92.3977 95.3944 105.58 102.504 89.3304C107.773 77.2862 111.52 59.219 128.013 59.219C145.806 59.219 131.112 81.0785 125.2 86.9899C121.496 90.6937 116.466 93.2049 111.275 93.2049C106.885 93.2049 99.0582 89.5532 105.532 92.1429C111.018 94.337 115.82 93.293 121.109 90.6481C123.852 89.2769 128.898 79.0113 128.898 84.0004C128.898 97.9003 146.801 96.0086 156 91.2775C157.224 90.6481 173.212 70.2436 179.169 60.4581C185.888 49.4186 194.751 43.2822 203.793 34.241C209.878 28.1557 218.225 21.693 206.271 21.693C178.451 21.693 172.825 62.9182 164.221 81.719C156.075 99.5196 148.302 133.917 123.941 133.917C117.274 133.917 125.341 133.824 127.836 133.13C132.223 131.912 138.876 129.943 141.977 126.325C149.832 117.161 154.035 108.729 158.306 96.3911C159.35 93.3744 168.324 69.7498 168.687 69.8704C166.4 68.9556 153.153 74.0973 155.095 73.1832C160.609 70.5885 168.592 70.12 174.566 68.8562C180.96 67.5038 187.577 69.758 193.5 67.0245C196.392 65.6897 196 67.0245 200.5 64.0245C205 61.0245 207 56.4585 213 52.5249C224.483 49.0249 222 51.1412 228.5 42.5249C232.789 36.8391 239.306 24.4121 242.5 18.0251C243.742 15.5405 255.87 -1.03536 250 5.52521C243.654 12.6174 231.563 36.2382 231.563 45.7663C231.563 52.7369 276.78 34.5725 246.393 45.0583C238.439 47.803 230 43.0245 224.483 58.3143C220.5 70.823 218.469 76.8807 215.81 88.052C212.84 100.525 226.218 94.6515 231.485 92.4969C238.707 89.5423 248.402 83.9948 251.959 76.8807C254.583 71.6328 259.282 66.8758 261.38 61.4218C261.83 60.2501 254.517 71.9711 252.824 74.9336C248.01 83.3579 240.542 96.3911 255.991 96.3911C263.695 96.3911 268.325 91.6401 274.754 88.4257C285.139 83.2329 291.708 75.582 297.175 65.6897C303.397 54.4318 293.244 68.1931 291.117 72.7898C288 79.5273 276.829 98.7112 281.284 92.7722C287.976 83.8489 294.414 74.899 300.735 65.7684C307.097 56.5783 315.042 60.2492 313.971 70.823C313.261 77.8342 305.256 101.66 321.13 95.4864C337.812 88.9991 336.872 61.269 354.212 55.4893C362.564 52.7052 367.89 62.4767 367.89 69.8704C367.89 84.4592 358.51 90.4221 345.027 93.382C319.555 98.9734 340.055 63.5062 351.576 56.4656C357.558 52.8099 365.182 59.3073 366.956 64.8834C371.646 79.6212 358.88 102.498 351.792 114.387C344.795 126.124 333.618 141.46 322.9 149.848C318.978 152.918 302.578 176.358 305.77 157.204C310.156 130.89 334.917 123.752 354.212 110.395C362.861 104.406 371.566 98.9847 379.898 92.5756C382.616 90.4847 384.605 86.7486 387.332 84.9838C391.799 82.0936 401.595 68.8254 403.263 63.8213" stroke="#FFD700" stroke-width="7" stroke-linecap="round"/>
+        </svg>               
+                 
+      <svg id="brandSvg" width="100" height="50" viewBox="0 0 283 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M46.5887 7.53416C42.8302 11.5138 39.7394 20.434 37.3625 25.2993C32.1581 35.9521 27.3064 46.6784 23.1398 57.7894C19.9707 66.2404 14.8645 78.8822 6.485 83.6704C4.29999 84.919 4 81.1429 4 79.6125C4 73.201 4.00671 79.6127 5.55974 82.7187C7.25372 86.1067 12.2667 87.7152 15.7641 87.7152C25.1495 87.7152 29.0846 85.4178 36.1729 79.9165C41.9548 75.429 46.5012 54.1031 34.9832 53.6918C33.639 53.6438 28.154 55.7195 31.1236 56.9699C35.8865 58.9753 43.6336 57.2557 48.3732 56.2957C59.2998 54.0828 67.4272 49.6632 76.0915 42.9983C79.0593 40.7154 84.1918 39.0537 86.0844 35.7416C94.8249 20.4459 70.4617 68.4896 57.031 79.8901C55.8271 80.912 52.3925 84.8323 55.1409 81.3969C57.9408 77.897 60.5076 74.1883 63.5079 70.8489C70.5043 63.0616 76.1725 53.8056 82.2776 45.3115C90.3673 34.0563 94.5181 51.6655 92.3763 58.675C91.4308 61.7692 81.3889 82.1776 89.1775 83.9084C92.6348 84.6767 95.2305 86.1244 98.9192 84.7411C105.44 82.296 105.865 76.4549 109.348 71.4569C115.65 62.4155 121.686 57.2515 130.154 50.5987C132.002 49.1462 141.045 45.9677 141.045 50.8895C141.045 57.173 143.342 60.4199 139.023 66.6587C133.25 74.9976 128.157 78.4691 119.381 83.1946C116.709 84.6332 113.111 84.7471 110.102 84.371C107.453 84.0399 108.7 82.3758 110.591 82.4808C117.924 82.8882 123.231 78.636 129.387 75.3959C136.65 71.5731 131.776 80.7708 137.133 82.7187C144.339 85.3393 153.017 82.3036 158.771 77.828C166.261 72.002 178.45 65.3722 180.964 55.5952C181.289 54.331 182.64 50.7142 181.361 53.3481C178.171 59.9149 175.291 66.4795 171.87 72.9902C168.204 79.968 161.031 101.889 161.031 94.007C161.031 83.8791 170.673 71.7053 175.783 63.4467C179.592 57.2898 182.796 48.4901 191.472 49.766C200.003 51.0205 193.865 74.1963 193.865 79.5067C193.865 84.4641 200.02 83.9084 203.593 83.9084C211.1 83.9084 214.152 71.5114 217.525 66.3547C223.209 57.6663 230.518 45.9331 241.106 42.6943C245.628 41.3112 250.308 42.7488 254.721 43.7518C255.614 43.9547 259.572 46.3177 257.391 45.7874C250.331 44.0701 242.389 44.9109 235.634 47.281C226.086 50.6312 221.444 58.022 218.847 67.399C218.022 70.3788 215.35 79.9089 218.133 82.6923C221.049 85.6077 229.979 83.2975 233.083 81.6349C238.475 78.7465 242.07 72.3677 245.336 67.3593C254.086 53.9421 261.606 40.4133 266.961 25.0878C270.152 15.9559 275.229 7.66991 278.038 -1.69208C280.129 -8.66371 274.721 2.19167 273.464 4.2032C266.792 14.8789 261.465 29.8796 258.25 41.9805C255.789 51.2458 253.108 61.909 253.108 71.523C253.108 76.3804 252.479 78.963 257.854 80.1148C261.042 80.7979 267.858 82.0091 269.763 78.1982" stroke="#FFD700" stroke-width="11" stroke-linecap="round"/>
+        </svg>
+
+        <svg id="imSvg" width="150" height="50" viewBox="0 0 496 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M33.5 29.4834C33.0423 33.1454 10.6661 69.8836 8.22818 72.7518C5.32864 76.163 4 82.8782 4 87.1276C4 102.068 24.7731 92.1286 28.9463 84.8256C31.5186 80.3241 42 65.5 49 58.376C56 51.2519 64.8209 47.1464 61.0569 64.084C60.0647 68.5492 55.7496 77.0953 53.2818 80.9732C48.602 88.3271 68.1633 63.0826 75.5 58.376C77.6655 56.9868 86.5 52.8143 86.5 58.376C86.5 64.6153 85 67.6545 82.2448 74.8659C80.5 79.4327 78.3708 84.8939 83.4898 88.1846C88.223 91.2274 93.5 90 99.134 87.9732C112.5 80.9732 127.234 73.0563 132.537 61.1243C133.209 59.6123 136.673 56.8953 138.198 56.2854C143.22 54.2763 129.863 63.3269 126.617 67.6545C120.464 75.8586 106.745 103.46 110.785 94.0336C112.532 89.9567 137.562 41.4608 145.55 55.8391C147.71 59.7271 146.631 66.02 144.798 69.7921C142.898 73.7039 141.19 77.8446 139.819 81.9598C138.25 86.6648 144.01 74.4919 144.986 72.7988C150.978 62.4135 155.5 55.8391 164.412 52.2216C169.211 50.2741 173.127 53.8669 173.127 58.376C173.127 67.2501 169.109 74.3129 166.033 82.4766C162.713 91.2886 166.969 91.9135 177.5 90.6746C193.567 88.7843 200.337 73.5537 205.026 55.8391C210.938 33.5056 193.538 82.6003 205.026 85.8826C219.001 89.8752 228.168 76.1872 238.57 68.8055C244.981 64.2555 256.364 53.0846 256.845 44.423C257.105 39.7365 249.408 41.3519 247.872 44.423C241.457 57.2527 275.722 53.6012 266.781 71.4833C261.573 81.8991 253.243 82.861 243.291 87.339C234.646 91.2294 233.349 83.1152 241.953 86.188C260.651 92.8661 271.633 93.8802 285.01 81.2081C292.446 74.1635 306.315 59.4647 306.315 48.8626C306.315 44.8865 296.323 39.9015 294.57 45.5975C290.74 58.0458 303.262 53.6321 308.946 59.3156C315.776 66.1454 322.04 77.9426 315.257 82.8759C315.257 89.2417 298.281 87.643 298.281 85.2014C298.281 81.1901 318.001 89.3217 320 89.2417C339.652 88.4556 336.778 61.3495 351.134 54.5706C354.641 52.9145 368.937 51.6109 359.12 51.6109C343.988 51.6109 333.348 66.5523 339.13 80.7853C344.021 92.825 364.241 94.3451 364.241 79.0001C364.241 69.3619 374.041 42.6554 368.258 50.3659C364.334 55.597 363.395 62.5645 363.395 68.9229C363.395 77.5226 366.711 96.2369 380.308 90.6746C392.141 85.8339 384.418 70.9689 387.59 62.0874C392.647 47.9269 404.409 30.8745 404.409 15.2485C404.409 12.9498 404.379 -0.771156 403.14 5.73514C401.236 15.7339 369.78 87.931 394.684 89.2417C405.551 89.8136 406.495 51.1881 394.05 51.1881C386.474 51.1881 397.169 57.1075 400.721 57.1075C417.811 57.1075 423.949 42.9542 431.798 29.4834C433.478 26.6002 439.342 8.36843 438.751 9.00023C422.334 26.5495 419.63 63.7737 419.63 86.7987C419.63 93.8607 431.699 94.1327 436.449 92.5303C449.658 88.0743 466.986 68.4849 466.986 54.1478C466.986 46.3527 461.93 46.3332 458.153 52.8559C454.109 59.8411 454.262 72.3027 457.872 79.282C465.869 94.7435 486.72 85.8495 491.086 72.7518" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+          </svg>
+          
+      <img class="herologo" src="./images/Group 22.svg" alt="">
+      <div id="mainImg"></div>
+
+      <h1 id="mainH1-2">COMMUNICATIONS</h1>
+
+      <p class="main-p">Crafting Brand Immiscible</p>
+      <div class="image"></div>
+      <img class="hand-bulb" src="./images/Picture1.png" alt="">
+    </div>
+
+    
+    <div class="banner-section">
+      <h2>
+        WE ARE INNOVATORS <br />
+        CREATORS <br />
+        <span> STRATERGISTS </span>
+      </h2>
+      <div class="banner-content">
+        <p>
+          We are . . . <BR></BR>
+          Pervasively Creative, Adaptively Connected, Relentlessly Curious, Divinely Discontented, Captivating storytellers & Eternal Craftspeople. . . !
+        </p>
+        <div class="numbers">
+          <div class="number-item">
+            <div class="numbers-suffix">
+              <h2 data-target="112">0</h2>
+              <h3>+</h3>
+            </div>
+            <p>Screens Place</p>
+          </div>
+          <div class="number-item">
+            <div class="numbers-suffix">
+              <h2 data-target="73">0</h2>
+              <h3>k</h3>
+            </div>
+            <p>People Reached</p>
+          </div>
+          <div class="number-item">
+            <div class="numbers-suffix">
+              <h2 data-target="225">0</h2>
+              <h3>+</h3>
+            </div>
+            <p>City Cover</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Services Section -->
+    <div class="our-services">
+      <!-- <p>What We Do</p> -->
+      <button class="whatWeDo">What We Do</button>
+      <h1>Our Services <span>.</span></h1>
+      <div class="services-cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <div
+            class="card-background"
+            style="background-image: url('./images/01.jpg')"
+          ></div>
+          <div class="card-content">
+            <div class="card-header">
+              <img
+                src="./service-logo-1.png"
+                alt="Billboard Icon"
+                class="card-icon"
+              />
+            </div>
+            <h3>Outdoor Billboards</h3>
+            <p>Maximize your reach with high-impact billboards.</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <div
+            class="card-background"
+            style="background-image: url('./images/02.jpg')"
+          ></div>
+          <div class="card-content">
+            <div class="card-header">
+              <img
+                src="./service-logo-2.png"
+                alt="Billboard Icon"
+                class="card-icon"
+              />
+            </div>
+            <h3>Urban Ads</h3>
+            <p>Transform cityscapes with our building advertisements.</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <div
+            class="card-background"
+            style="background-image: url('./images/03.jpg')"
+          ></div>
+          <div class="card-content">
+            <div class="card-header">
+              <img
+                src="./service-logo-3.png"
+                alt="Billboard Icon"
+                class="card-icon"
+              />
+            </div>
+            <h3>Industrial Ads</h3>
+            <p>Connect with your industry-specific audience.</p>
+          </div>
+        </div>
+      </div>
+      <button class="explore-services-btn">Explore All Services</button>
+    </div>
+
+    <!-- banner -->
+    <div class="banner">
+      <div
+        class="left-div"
+        style="
+          background-image: url('./images/victor-he-tHdONyz_W9Y-unsplash.jpg');
+        "
+      >
+        <h1>OUTDOOR ADVERTISING SOLUTION</h1>
+      </div>
+      <div class="right-div">
+        <div class="right-inside-container">
+          <h2>
+            PROVIDING EXPERT ASSISTANCE WITH BILLBOARD ADVERTISING FOR 25 YEARS
+          </h2>
+          <div class="progress-bars">
+            <label>Planning</label>
+            <div class="progress">
+              <div class="progress-bar" data-width="90%"></div>
+            </div>
+            <label>Strategy</label>
+            <div class="progress">
+              <div class="progress-bar" data-width="70%"></div>
+            </div>
+            <label>Performance</label>
+            <div class="progress">
+              <div class="progress-bar" data-width="60%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add another div for the right side if needed -->
+    </div>
+
+    <!-- video section -->
+    <div class="video-section">
+      <div class="left">
+        <img src="./group-discuss.png" class="video-img" alt="" />
+      </div>
+      <div class="right">
+        <h1>WE HELP TO CREATE EYE ATTENTION <span>.</span></h1>
+        <div class="right-1">
+          <p>
+            We are a value-driven organization. Our core values <br />
+            inspire us to push our boundaries and set <br />benchmarks for
+            others.
+          </p>
+          <div class="right-1-inner">
+            <img src="./images/Vector.png" alt="Billboard Icon" class="" />
+            <h4>Play video</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="adcard-title">
+      EXPLORE NEW <br />
+      ADVERTISING MEDIA
+    </h1>
+
+    <!-- adCards -->
+
+    <div id="adCards">
+      <div class="adcard" style="background-image: url('./adcards/train.jpg')">
+        <div class="adcard-inner">
+          <span style="font-size: 3em; color: rgb(255, 255, 255)">
+            <i class="fa-solid fa-train"></i>
+          </span>
+          <p>TRAIN ADVERTISING</p>
+        </div>
+      </div>
+      <div
+        class="adcard"
+        style="background-image: url('./adcards/auto-hood.jpg')"
+      >
+        <div>
+          <span style="font-size: 3em; color: rgb(255, 255, 255)">
+            <i class="fa-solid fa-car"></i>
+          </span>
+          <p>VEHICLE ADVERTISING</p>
+        </div>
+      </div>
+      <div
+        class="adcard"
+        style="background-image: url('./adcards/van-branding.jpg')"
+      >
+        <div>
+          <span style="font-size: 3em; color: rgb(255, 255, 255)">
+            <i class="fa-solid fa-truck"></i>
+          </span>
+          <p>VEHICLE ADVERTISING</p>
+        </div>
+      </div>
+      <div
+        class="adcard"
+        style="background-image: url('./adcards/3d-acrylic.jpg')"
+      >
+        <div>
+          <span style="font-size: 3em; color: rgb(255, 255, 255)">
+            <i class="fa-solid fa-rectangle-ad"></i>
+          </span>
+          <p>
+            3D ACRYLIC <br />
+            ADVERTISING
+          </p>
+        </div>
+      </div>
+      <div
+        class="adcard"
+        style="background-image: url('./adcards/retail-outlet.jpg')"
+      >
+        <div>
+          <span style="font-size: 3em; color: rgb(255, 255, 255)">
+            <i class="fa-solid fa-bullhorn"></i>
+          </span>
+          <p>
+            RETAIL <br />
+            ADVERTISING
+          </p>
+        </div>
+      </div>
+      <div class="adcard" style="background-image: url('./adcards/train.jpg')">
+        <div class="adcard-inner">
+          <span style="font-size: 3em; color: rgb(255, 255, 255)">
+            <i class="fa-solid fa-train"></i>
+          </span>
+          <p>TRAIN ADVERTISING</p>
+        </div>
+      </div>
+      <div
+        class="adcard"
+        style="background-image: url('./adcards/auto-hood.jpg')"
+      >
+        <div>
+          <span style="font-size: 3em; color: rgb(255, 255, 255)">
+            <i class="fa-solid fa-car"></i>
+          </span>
+          <p>VEHICLE ADVERTISING</p>
+        </div>
+      </div>
+      <div
+        class="adcard"
+        style="background-image: url('./adcards/van-branding.jpg')"
+      >
+        <div>
+          <span style="font-size: 3em; color: rgb(255, 255, 255)">
+            <i class="fa-solid fa-truck"></i>
+          </span>
+          <p>VEHICLE ADVERTISING</p>
+        </div>
+      </div>
+      <div
+        class="adcard"
+        style="background-image: url('./adcards/3d-acrylic.jpg')"
+      >
+        <div>
+          <span style="font-size: 3em; color: rgb(255, 255, 255)">
+            <i class="fa-solid fa-rectangle-ad"></i>
+          </span>
+          <p>
+            3D ACRYLIC <br />
+            ADVERTISING
+          </p>
+        </div>
+      </div>
+      <div
+        class="adcard"
+        style="background-image: url('./adcards/retail-outlet.jpg')"
+      >
+        <div>
+          <span style="font-size: 3em; color: rgb(255, 255, 255)">
+            <i class="fa-solid fa-bullhorn"></i>
+          </span>
+          <p>
+            RETAIL <br />
+            ADVERTISING
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3-cards -->
+
+    <div class="info-cards">
+      <div class="info-card">
+        <img src="./images/files (2).png" alt="" />
+        <h3>MULTI FORMAT MEDIA</h3>
+        <p>
+          Billboards capture repeat exposure business message more effectively
+          than almost any other marketing channel..
+        </p>
+      </div>
+      <div class="info-card">
+        <img src="./images/check-icon (1).png" alt="" />
+        <h3>SMARTLY PLANNED</h3>
+        <p>
+          Start building your brand with the strategic one. an industry that
+          your brand with the strategic one industry expertise.
+        </p>
+      </div>
+      <div class="info-card">
+        <img src="./images/Frame 25.png" alt="" />
+
+        <h3>BUILD BRANDS</h3>
+        <p>
+          A business is only as good as its strategic process, and that’s what
+          contributes to expectations with the one industry.
+        </p>
+      </div>
+    </div>
+
+    <div id="main-slideshow">
+      <div class="slideshow-container">
+        <div class="slideshow">
+          <div
+            class="photo"
+            style="
+              background-image: url('./adcards/3d-acrylic.jpg');
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="photo"
+            style="
+              background-image: url('./adcards/atm.png');
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="photo"
+            style="
+              background-image: url('./adcards/asianpaint-selfie-point.jpg');
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="photo"
+            style="
+              background-image: url('./adcards/retail-outlet.jpg');
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="photo"
+            style="
+              background-image: url('./adcards/college.png');
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="photo"
+            style="
+              background-image: url('./adcards/college.png');
+              background-size: cover;
+            "
+          ></div>
+        </div>
+      </div>
+      <div class="slideshow-container2">
+        <div class="slideshow2">
+          <div
+            class="photo"
+            style="
+              background-image: url('./adcards/3d-acrylic.jpg');
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="photo"
+            style="
+              background-image: url('./adcards/atm.png');
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="photo"
+            style="
+              background-image: url('./adcards/auto-hood.jpg');
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="photo"
+            style="
+              background-image: url('./adcards/retail-outlet.jpg');
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="photo"
+            style="
+              background-image: url('./adcards/college.png');
+              background-size: cover;
+            "
+          ></div>
+          <div
+            class="photo"
+            style="
+              background-image: url('./adcards/college.png');
+              background-size: cover;
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-btn"><a href="./gallery.html"><button class="explore-services-btn">Explore Gallery</button></a></div>
+
+    <!-- projects -->
+
+    <div class="projects">
+      <div class="project-upper">
+        <button class="whatWeDo">What We Do</button>
+        <h1>Our Projects</h1>
+      </div>
+      <div class="project-lower">
+        <div class="left">
+          <div class="overlay-hover">
+            <div>
+              <h4>A Vertical Traditional</h4>
+              <p>Digital Billboard</p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="top">
+            <div class="top-left">
+              <div class="overlay-hover">
+                <div>
+                  <h4>A Vertical Traditional</h4>
+                </div>
+              </div>
+            </div>
+            <div class="top-right">
+              <div class="overlay-hover">
+                <div>
+                  <h4>A Vertical Traditional</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="overlay-hover">
+              <div>
+                <h4>Billboard Information</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="empty-space">
+    </div>
+    <div class="client-title">
+      <div class="review-boy" ><img src="./images/review-boy.png" alt=""></div>
+      <div class="yellowBox"></div>
+      <img src="./Group 21.png" alt="" />
+      <h1>
+        We have <br /> Happy Clients..!
+      </h1>
+     
+    </div> 
+
+    <div class="clients-section">
+      
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture1.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture2.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture3.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture4.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture5.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture6.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture7.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture8.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture9.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture10.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture11.png')"
+      ></div>
+
+
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture13.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture14.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture15.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture16.png')"
+      ></div>
+
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture17.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture18.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture19.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture20.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture21.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture22.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture23.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture24.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture25.png')"
+      ></div>
+
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture27.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture28.png')"
+      ></div>
+      <div
+        class="client-logo"
+        style="background-image: url('./logos/picture12.png')"
+      ></div>
+    </div>
+
+    <!-- Team -->
+    <div class="team">
+      <div class="team-title">
+        <button class="whatWeDo">MEET OUR TEAM</button>
+
+        <h1>OUR TEAM</h1>
+        <div class="members">
+          <div class="member">
+            <div class="memberInfo">
+              <div>
+                <h5>Name</h5>
+                <p>Designation</p>
+              </div>
+            </div>
+          </div>
+          <div class="member">
+            <div class="memberInfo">
+              <div>
+                <h5>Name</h5>
+                <p>Designation</p>
+              </div>
+            </div>
+          </div>
+          <div class="member">
+            <div class="memberInfo">
+              <div>
+                <h5>Name</h5>
+                <p>Designation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact us section -->
+ <div class="contact-section">
+  <div class="faqs">
+    <div class="faq-inner">
+      <h1>Feel Free To Ask Questions</h1>
+    </div>
+    <!-- Add more FAQ items here -->
+  </div>
+  <div class="contact-form">
+    <form>
+      <h2>REACH OUT VIA THE FORM BELOW</h2>
+      <input type="text" placeholder="Full Name" name="fullname" />
+      <input type="email" placeholder="Email" name="email" />
+      <input type="text" placeholder="Phone" name="phone" />
+      <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+      <button class="form-btn" type="submit">Submit Form</button>
+    </form>
+  </div>
+</div>
+
+<!--call to action footer  -->
+<div class="cta-section">
+  <div class="cta-left">
+    <img class="cup" src="./images/cup.png" alt="">
+    <p>(24 X 7) <br> AT YOUR SERVICE 
+    </p>
+    <h1> We Love talking brands … <br>
+      Lets Talk about yours…!
+        </h1>
+
+  </div>
+  <div class="cta-right">
+    <p>
+      <span>Contact Us</span>
+      <br> <br />
+      +91-9955990404, +91- 8228040404 <br>
+      mail.voillaa@gmail.com
+      <br />
+      48-B, Sahdeo Mahto Marg, Opp. Children's Park, Boring Road, <br> Patna, Bihar 800001
+
+    </p>
+  </div>
+</div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-part" id="footer-part1">
+        <img src="./images/Group 22.svg" alt="Outmedia Logo" class="footer-logo" />
+        <p>© Copyrights 2023 Outmedia<br />All rights reserved.</p>
+      </div>
+      <div class="footer-part" id="footer-part2">
+        <h4>USEFUL LINKS</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-part" id="footer-part3">
+        <h4>Subscribe</h4>
+        <div class="social-media-links">
+          <!-- Replace # with actual links -->
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- below is javascript  -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+      integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+      integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

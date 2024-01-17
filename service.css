@@ -1,0 +1,699 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Initial styles for navbar */
+#navbar {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 5%;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: background-color 0.3s; /* Smooth background color transition */
+  z-index: 10;
+}
+
+.nav-left,
+.nav-middle,
+.nav-right {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 30%;
+}
+
+.nav-right {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-middle a {
+  color: white;
+  text-decoration: none;
+}
+.nav-logo2 {
+  display: block; /* Display nav-logo2 in sticky navbar */
+  margin-left: 20px;
+}
+.nav-logo{
+  display: none;
+}
+
+.social-icon span{
+  color: #ffffff;
+}
+.contact-btn {
+  padding: 10px 15px;
+  /* Style your button */
+
+  background-color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  font-weight: 700;
+  color: #520088;
+}
+
+/* normal hover effect */
+ .nav-middle a:hover,
+.social-icon span:hover,
+.contact-btn:hover,
+#menu:hover{
+  color: #ffcc00;
+}
+
+/* Styling for sticky navbar */
+#navbar.sticky {
+  background-color: #ffffff; /* Background turns white */
+  z-index: 10;
+}
+
+#navbar.sticky .nav-logo {
+  display: block; /* Hide nav-logo in sticky navbar */
+}
+
+#navbar.sticky .nav-logo2 {
+  display: none; /* Display nav-logo2 in sticky navbar */
+}
+
+#navbar.sticky .nav-middle a,
+#navbar.sticky .social-icon span,
+#navbar.sticky .contact-btn, #navbar.sticky #menu  {
+ color: #520088; /* Background color for links, icons, and button */ /* Text color for links, icons, and button */
+}
+#navbar.sticky .contact-btn{
+  background-color: #520088;
+  color: #ffffff;
+}
+/* Button hover effect */
+
+
+#navbar.sticky .nav-middle a:hover,
+#navbar.sticky .social-icon span:hover,
+#navbar.sticky .contact-btn:hover,
+#navbar.sticky #menu:hover {
+color: #ffcc00; /* Color on hover */
+}
+#navbar.sticky .contact-btn:hover {
+  background-color: #ffcc00; /* Button background color on hover */
+  color: #520088;
+}
+
+#menu{
+  color:#ffff;
+  font-size: 1rem;
+  display: none;
+  cursor: pointer;
+}
+/* dropdown menu */
+
+.dropdown_menu{
+position: absolute;
+right: 2rem;
+top: 105%;
+width: 40%;
+background-color: #520088;
+backdrop-filter: blur(10px);
+border-radius: 10px;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 20px;
+padding: 10% 0%;
+visibility: hidden;
+}
+
+
+    
+.links{
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+ 
+}
+
+.dropdown_menu a,.dropdown_menu i{
+
+  text-decoration: none;
+  color: #ffffff;
+
+}
+
+.cont-btn{
+  color: white;
+
+  width: 80%;
+  padding: 10px 15px;
+  /* Style your button */
+
+  background-color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  font-weight: 700;
+  color: #520088;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+padding: 5px;
+max-width: 70%;
+}
+/* box */
+.box{
+  height: 200vh;
+  width: 100vw;
+}
+
+
+
+/* responsive */
+@media(max-width:768px){
+  
+  #navbar .nav-middle a,
+  #navbar .social-icon span,
+  #navbar .contact-btn{
+      display: none;
+  }
+
+  #navbar #toggle-btn .menu{
+    color: #520088;
+  }
+
+  #menu{
+      display: block;
+  }
+  #menu:hover{
+      color:white
+  }
+}
+
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 120vh; /* Adjust height as needed */
+    overflow: hidden;
+  }
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.8s ease;
+    opacity: 0;
+  }
+  .active {
+    opacity: 1;
+  }
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  /* .button {
+          position: absolute;
+          left: 10%;
+          bottom: 10%;
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+      } */
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0%;
+    background: linear-gradient(to right, #180338 0%, transparent 100%);
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .arrow.left {
+    left: 10px;
+  }
+  
+  .arrow.right {
+    right: 10px;
+  }
+  .overlay-text {
+    position: absolute;
+    top: 30%;
+    left: 10%; /* Adjusted to position the text on the left side */
+    transform: translateY(-50%);
+    color: white;
+    text-align: left;
+    animation: moveText 1s ease;
+  }
+  
+  @keyframes moveText {
+    from {
+      transform: translateY(-50%) translateX(-100px); /* Start off-screen to the left */
+      opacity: 0;
+    }
+    to {
+      transform: translateY(-50%) translateX(0);
+      opacity: 1;
+    }
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  
+  .button {
+    position: absolute;
+    left: 10%; /* Adjust the horizontal position as needed */
+    bottom: 30%; /* Adjust the vertical position from the bottom as needed */
+    padding: 10px 20px;
+    background-color: #520088; /* Background color of the button */
+    color: white; /* Text color */
+    text-decoration: none;
+    border-radius: 5px;
+    border: none; /* Remove default border */
+    cursor: pointer; /* Cursor style when hovering over the button */
+  
+    /* Animation properties */
+    animation: slideUpButton 1s ease;
+  }
+  
+  @keyframes slideUpButton {
+    from {
+      transform: translateY(100px); /* Start from below its final position */
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .animate-button {
+    animation: slideUpButton 2s ease;
+  }
+  
+  @keyframes slideUpButton {
+    from {
+      transform: translateY(50px); /* Adjust as needed to start off-screen */
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .animate-text {
+    animation: slideInText 2s ease;
+  }
+  
+  @keyframes slideInText {
+    from {
+      transform: translateY(-50%) translateX(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(-50%) translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  p {
+    font-size: 16px;
+  }
+
+  /* cards */
+  /* cards section inside our services */
+.services-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    font-family: "Open Sans", sans-serif;
+  }
+  .card {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+    height: 500px; /* Adjust as needed */
+    overflow: hidden;
+  }
+  
+  .card-background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-content {
+    position: absolute;
+    bottom: 0%;
+    left: 20%; /* Centering the overlay div */
+    right: 0%;
+    width: 80%;
+    height: 30%;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px; /* Adds padding inside the card */
+  }
+  
+  .card-icon {
+    width: auto; /* Adjust size as needed */
+    height: 50px;
+  }
+  
+  .card h3 {
+    display: inline; /* Ensures that the title is inline with the icon */
+    font-size: 1rem; /* Adjust size as needed */
+    margin: 0; /* Resets default margin */
+    text-transform: capitalize;
+  }
+  .card-content p {
+    font-size: 11px;
+    color: #6d6d6d;
+  }
+  
+  .card:hover .card-background {
+    transform: scale(1.2); /* Zoom effect on hover */
+  }
+  
+  .banner {
+    height: 80vh;
+    display: flex;
+  }
+  
+  .left-div {
+    flex-basis: 50%; /* Adjust as needed */
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center; /* Centers children vertically inside .left-div */
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white; /* Assuming white text on a dark background image */
+  }
+  
+  .right-div {
+    flex-basis: 50%; /* Adjust as needed */
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center; /* Centers children vertically inside .left-div */
+    align-items: center;
+    background-color: #520088;
+  }
+  
+  .right-inside-container h1 {
+    line-height: 200%;
+  }
+  
+  .right-inside-container {
+    width: 70%;
+    color: #fff;
+  }
+
+  /* Services page css below */
+#services-cards{
+    margin: 5% 0%;
+     display: flex;
+     justify-content: center;
+     gap: 20px; /* Space between cards */
+     font-family: "Open Sans", sans-serif;
+   }
+   
+   h1{
+     font-weight: 900;
+   }
+   #main-slideshow{
+     height: 80vh;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     flex-direction:column;
+     overflow: hidden;
+   }
+   
+
+/* cta */
+.cta-section {
+  position: relative;
+  display: flex;
+  background-color: #40006b;
+  color: white;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.cta-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+.cta-left {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  padding: 10%;
+}
+.cup {
+  width: 30%;
+  margin-left: 8%;
+  animation: float 1.5s infinite ease-in-out;
+}
+
+.cta-right {
+  background-color: #1e0131;
+}
+
+.cta-left h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #dadada;
+  font-family: "Montserrat", sans-serif;
+
+  font-weight: 700;
+  font-size: clamp(1rem, 5vw, 2.5rem);
+  /* Additional styling if needed */
+}
+.cta-left p {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  letter-spacing: 2px;
+}
+.cta-right p {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  letter-spacing: 2px;
+  text-align: start;
+  font-size: clamp(0.5rem, 2.5vw, 1.2rem); /* Adjust the values as needed */
+  /* Additional styling if needed */
+}
+
+.cta-right span {
+  color: white;
+  font-weight: bold;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-around; /* Space out the footer parts */
+  align-items: start; /* Align content to the top */
+  height: 60vh;
+  padding: 20px;
+  background-color: white;
+  color: #520088;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.footer-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* Distribute space around content */
+  height: 100%; /* Ensure each part takes full height */
+  padding: 10px;
+  color: #520088;
+}
+
+.footer-logo {
+  width: 300px; /* Adjust as needed */
+  height: auto;
+  margin-bottom: 20px; /* Space below the logo */
+}
+
+#footer-part2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #520088;
+}
+
+#footer-part2 ul li {
+  margin-bottom: 10px; /* Space between links */
+  color: #520088;
+}
+
+#footer-part2 ul li a {
+  color: #520088;
+  text-decoration: none;
+}
+
+.social-media-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #520088;
+}
+
+.social-media-links a {
+  margin-bottom: 10px; /* Space between social media links */
+  color: white;
+  text-decoration: none;
+  color: #520088;
+}
+
+/* animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* media query for common sections */
+/* cta
+   footer
+    */
+
+    @media screen and (max-width: 653px ) {
+    
+      h1{
+        font-size: 2rem;
+      }
+    
+      .slider{
+        height: 50vh;
+      }
+
+
+      /* services cards */
+      #services-cards {
+        margin: 5% 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        font-family: "Open Sans", sans-serif;
+    }
+    .card-content{
+ 
+
+      right: 0%;
+      bottom: 0%;
+    }
+
+    /* cta section starts here */
+    
+    .cta-section {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .cta-left ,.cta-right{
+      width: 100%;
+      height: 50%;
+    }
+    .cta-right p{
+      font-size: 0.8rem;
+    }
+    
+    /* footer section starts here */
+    footer {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.6rem;
+    text-align: center;
+    } 
+    .footer-logo  {
+      width: 80%;
+    }
+    .footer-part {
+    justify-content:center ;
+    align-items: center;
+    width: 100%;
+    }
+    
+    .footer-part h4{
+      font-size: 1rem;
+      margin-bottom: 5%;
+    }
+    }
+    
+    
+    
+  
+
+
+    /* screen size 768 */
+
+    @media screen and (min-width: 654px) and (max-width: 768px) {
+      #services-cards {
+        padding: 5%;
+      }
+      .card-content{
+        height: 45%;
+      }
+    }
