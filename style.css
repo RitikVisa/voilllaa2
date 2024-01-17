@@ -925,12 +925,25 @@ animation: float 3s infinite;
   transition: transform 0.3s ease, opacity 0.3s ease;
   margin: 1rem;
 }
+.client-logo1 {
+  background-image: url('./logos/picture1.png');
+  width: 150px; /* Adjust based on your logo size */
+  height: 150px; /* Adjust based on your logo size */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  margin: 1rem;
+}
 
 .client-logo:hover {
   transform: scale(1.5); /* Scale logo */
   opacity: 0.9; /* Decrease opacity */
 }
-
+.client-logo1:hover {
+  transform: scale(1.5); /* Scale logo */
+  opacity: 0.9; /* Decrease opacity */
+}
 
 /* ad cards */
 #adCards{
