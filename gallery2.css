@@ -204,6 +204,10 @@ max-width: 70%;
   #menu:hover{
       color:white
   }
+
+  #navbar.sticky #menu:hover{
+      color: #520088;
+  }
 }
 
 
@@ -433,14 +437,14 @@ max-width: 70%;
 }
 
 form{
-  max-height: 60vh;
+  max-height: 70vh;
 }
 
 .contact-form h2 {
-  margin-bottom: 20px;
+ 
   text-align: center;
   color: white;
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: clamp(1rem, 5vw, 1.5rem);
 }
 
 .contact-form form {
@@ -451,6 +455,7 @@ form{
   justify-content: center;
   background-color: #ffcc00;
   width: 70%;
+  border-radius: 6px;
 }
 
 .contact-form input,
@@ -458,7 +463,7 @@ form{
 .contact-form textarea {
   border: none;
   border-bottom: 1px solid rgb(255, 255, 255);
-  margin-bottom: 20px;
+  margin-bottom: 2%;
   padding: 10px;
   background-color: #ffcc0000;
   width: 80%;
