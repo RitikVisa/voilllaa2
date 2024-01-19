@@ -287,13 +287,13 @@ max-width: 70%;
   }
   
   .gallery-item {
-      width: calc(20% - 10px); /* Adjust for 4 items per row */
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-      margin: 2% 0%;
-      
-  }
+    width: calc(50% - 10px); /* Adjust for 2 items per row */
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin: 2% 0%;
+}
+
   
   .gallery-item img {
       width: 100%;
@@ -364,7 +364,11 @@ max-width: 70%;
       cursor: pointer;
       user-select: none;
   }
-
+  @media (min-width: 1024px) {
+    .gallery-item {
+        width: calc(33.333% - 10px); /* Adjust for 3 items per row */
+    }
+}
   /* contact us */
 .contact-section {
   display: flex;
