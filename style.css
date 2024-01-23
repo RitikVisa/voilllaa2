@@ -832,11 +832,11 @@ color: #000000;
   word-spacing: 40px;
   opacity: 0%;
 }
-.image {
-  height: 120vh;
+.tab {
+  height: 100vh;
   width: 100vw;
   position: absolute;
-  background-image: url('./doorFrame\ \(2\).png');
+  background-image: url('./smallDoor.png');
   background-size: cover;
     background-position: center;
 
@@ -888,7 +888,7 @@ color: #000000;
   left: 35%;
   color: #520088;
 }
-.review-boy img{
+/* .review-boy img{
 scale: 3;
 animation: float 3s infinite;
 }
@@ -898,7 +898,7 @@ animation: float 3s infinite;
   position: absolute;
   top:0%;
   left: 80%;
-}
+} */
 
 .client-title img{
   height: 20vh;
@@ -1586,4 +1586,29 @@ height: 35%;
 }
 } */ 
 
+@media screen and (min-width: 540px ) and (max-width: 1023){
+  .tab {
+    height: 160vh;
+    width: 100vw;
+    position: absolute;
+    top: 0%;
+    background-image: url('./smallDoor.png');
+    background-size: cover;
+    background-position: center;
+  
+  }
+}
 
+@media screen and (min-width: 1280px ){
+  .tab {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+  
+    background-image: url('./doorFrame\ \(2\).png');
+    background-size: cover;
+    background-position: center;
+  
+  }
+  
+}
