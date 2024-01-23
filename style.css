@@ -832,13 +832,14 @@ color: #000000;
   word-spacing: 40px;
   opacity: 0%;
 }
-.image {
-  height: 120vh;
+.tab {
+  height: 100vh;
   width: 100vw;
   position: absolute;
-  background-image: url('./doorFrame\ \(2\).png');
+  
+  background-image: url('./Group\ 22\ \(1\).png');
   background-size: cover;
-    background-position: center;
+  background-position: center;
 
 }
 
@@ -871,6 +872,7 @@ color: #000000;
   width: 100%;
   position: relative;
   margin-bottom: 5%;
+  overflow: hidden;
 }
 .yellowBox{
   height: 40vh;
@@ -1404,9 +1406,32 @@ h1{
 
 }
 
+@media screen and (min-width: 540px ) and (max-width: 1023){
+  .tab {
+    height: 160vh;
+    width: 100vw;
+    position: absolute;
+    top: 0%;
+    background-image: url('./Group\ 22\ \(1\).png');
+    background-size: cover;
+    background-position: center;
+  
+  }
+}
 
+@media screen and (min-width: 1280px ){
+  .tab {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+  
+    background-image: url('./doorFrame\ \(2\).png');
+    background-size: cover;
+    background-position: center;
+  
+  }
 
-
+}
 
 /* Medium screens (769px to 1024px) */
 /* @media screen and (min-width: 769px) and (max-width: 1024px) { */
@@ -1585,5 +1610,4 @@ height: 35%;
   padding: 10%;
 }
 } */ 
-
 
