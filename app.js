@@ -116,7 +116,7 @@ const mainSectionTimeline = gsap.timeline({
   }
 });
 
-mainSectionTimeline.to(".tab", { height: "800vh", width: "850vw" }, "a")
+mainSectionTimeline.to(".image", { height: "800vh", width: "850vw" }, "a")
   .to(".herologo", { top: "30%", width: "40%", opacity: "1" }, "a")
   .to("#mainImg", { filter: "blur(10px) grayscale(0%)" }, "a")
   // .to("#navbar", { backgroundColor: "#fff" }, "a");
