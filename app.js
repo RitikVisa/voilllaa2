@@ -173,3 +173,51 @@ const mainSlideshowTimeline = gsap.timeline({
   mainSlideshowTimeline.to(".slideshow", { left: "0%" }, "c")
     .to(".slideshow2", { left: "10%" }, "c");
   
+
+     // slider animation
+     const slides = document.querySelectorAll('.slide');
+     const prevBtn = document.querySelector('.prev-btn');
+     const nextBtn = document.querySelector('.next-btn');
+     
+     let currentIndex = 0;
+     
+     function showSlide(index) {
+       slides.forEach((slide, i) => {
+         if (i === index) {
+           slide.style.display = 'block';
+         } else {
+           slide.style.display = 'none';
+         }
+       });
+     }
+     
+     function prevSlide() {
+       currentIndex--;
+       if (currentIndex < 0) {
+         currentIndex = slides.length - 1;
+       }
+       showSlide(currentIndex);
+     }
+     
+     function nextSlide() {
+       currentIndex++;
+       if (currentIndex >= slides.length) {
+         currentIndex = 0;
+       }
+       showSlide(currentIndex);
+     }
+     
+     prevBtn.addEventListener('click', prevSlide);
+     nextBtn.addEventListener('click', nextSlide);
+     
+     // Show the initial slide (you can set this to the desired starting index)
+     showSlide(currentIndex);
+     
+     // Automatically advance to the next slide
+     function autoSlide() {
+       nextSlide();
+       setTimeout(autoSlide, 3000); // Change slide every 3 seconds (adjust as needed)
+     }
+     
+     autoSlide(); // Start the auto-slide loop
+     
