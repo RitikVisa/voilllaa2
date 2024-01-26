@@ -157,9 +157,9 @@ background: linear-gradient(135deg, hsla(340, 100%, 99%, 1) 0%, hsla(263, 100%, 
   color: #ffffff;
 }
 
-.cont-btn  {
+.dropdown_menu .cont-btn  {
   
-
+  color: #520088;
   width: 80%;
   padding: 10px 15px;
   /* Style your button */
@@ -168,6 +168,7 @@ background: linear-gradient(135deg, hsla(340, 100%, 99%, 1) 0%, hsla(263, 100%, 
   border: none;
   border-radius: 2px;
   font-weight: 700;
+
   
 }
 
