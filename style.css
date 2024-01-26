@@ -157,8 +157,8 @@ background: linear-gradient(135deg, hsla(340, 100%, 99%, 1) 0%, hsla(263, 100%, 
   color: #ffffff;
 }
 
-.cont-btn {
-  color: white;
+.cont-btn  {
+  
 
   width: 80%;
   padding: 10px 15px;
@@ -168,7 +168,7 @@ background: linear-gradient(135deg, hsla(340, 100%, 99%, 1) 0%, hsla(263, 100%, 
   border: none;
   border-radius: 2px;
   font-weight: 700;
-  color: #520088;
+  
 }
 
 .icons {
@@ -192,7 +192,6 @@ background: linear-gradient(135deg, hsla(340, 100%, 99%, 1) 0%, hsla(263, 100%, 
     align-items: center;
     overflow: hidden;
     background-size: cover;
-    background-image: url(./pexels-czapp-árpád-12729169.jpg);
     background-position: center;
 }
 .tab {
@@ -291,7 +290,16 @@ background: linear-gradient(135deg, hsla(340, 100%, 99%, 1) 0%, hsla(263, 100%, 
     
     }
     
-
+    #mainImg {
+      background-image: url('./pexels-czapp-árpád-12729169.jpg');
+      /* background-color: #fff; */
+      background-size: cover;
+    
+        background-position: center;
+      height: 100%;
+      width: 100vw;
+    
+    }
    
 
 
