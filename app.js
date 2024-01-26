@@ -71,6 +71,7 @@ const mainSectionTimeline = gsap.timeline({
   .to(".hand-bulb", { opacity: "1", left: "42.5%", transform: "translateX(-50%)", opacity: "100%", top: "50%", scale: "4", delay: 2 }, "a")
   .to("#brandSvg", { delay: 1, strokeDashoffset: "0" })
   .to("#imSvg", { delay: 1, strokeDashoffset: "0" })
+  .to("#mainImg", { filter: "blur(10px) grayscale(0%)" }, "a")
   
 // banner section animation 
 
