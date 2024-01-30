@@ -55,24 +55,25 @@ window.addEventListener("scroll", function () {
 
 // GreenSock Animation Timeline for various sections
 const mainSectionTimeline = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#hero",
-      start: "60% 60%",
-      end: "200% 60%",
-      scrub: 1,
-      pin: true,
-    }
-  });
+  scrollTrigger: {
+    trigger: "#hero",
+    start: "60% 60%",
+    end: "200% 60%",
+    scrub: 1,
+    pin: true,
+
+  }
+});
 
 
-  mainSectionTimeline.to(".tab", { height: "800vh", width: "850vw" }, "a")
-  .to(".herologo", { top: "30%", width: "40%", opacity: "1" }, "a")
-  .to("#crafting", { delay: 0, strokeDashoffset: "0" })
-  .to(".hand-bulb", { opacity: "1", left: "42.5%", transform: "translateX(-50%)", opacity: "100%", top: "50%", scale: "4", delay: 2 }, "a")
-  .to("#brandSvg", { delay: 1, strokeDashoffset: "0" })
-  .to("#imSvg", { delay: 1, strokeDashoffset: "0" })
-  .to("#mainImg", { filter: "blur(10px) grayscale(0%)" }, "a")
-  
+mainSectionTimeline.to(".tab", { height: "800vh", width: "850vw" }, "a")
+.to(".herologo", { top: "10%", opacity: "1" })
+ .to("#crafting", { delay: 2, strokeDashoffset: "0" },"a")
+.to("#mainImg", { filter: "blur(10px) grayscale(80%)" }, "a")
+.to(".hand-bulb", { delay: 1,  position: "absolute",top:" 30%",right:"27%" ,width:"100%",opacity: "1"})
+.to("#brandSvg", { delay: 1, strokeDashoffset: "0" })
+
+.to("#imSvg", { delay: 1, strokeDashoffset: "0" })
 // banner section animation 
 
 // Function to animate numbers

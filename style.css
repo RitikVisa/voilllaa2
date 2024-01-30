@@ -168,7 +168,7 @@ background: linear-gradient(135deg, hsla(340, 100%, 99%, 1) 0%, hsla(263, 100%, 
   border: none;
   border-radius: 2px;
   font-weight: 700;
-
+  text-align: center;
   
 }
 
@@ -185,124 +185,173 @@ background: linear-gradient(135deg, hsla(340, 100%, 99%, 1) 0%, hsla(263, 100%, 
 
 /* hero section
  */
-#hero {
-    min-height: 100vh;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
+ #hero{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
+
+
+
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blueviolet; */
+
+
+}
+
+#brandSvg{
+
+  width: 20%;
+  stroke-dasharray: 1125;
+  z-index: 19;
+  stroke-dashoffset: 1125;
+  animation: 6s fillSvg linear ;
+  animation-iteration-count: infinite;
+  z-index: 19;
+
+ 
+
+}
+
+.herologo{
+  width: 100%;
+  z-index: 20;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  opacity: 0;
+  bottom: 15%;
+}
+    
+#crafting{
+  position: absolute;
+  top: 45%;
+  left:5%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  stroke-dasharray:  1853;
+  stroke-dashoffset:  1853;
+  z-index: 19;
+  animation: 6s fillSvg linear ;
+  animation-iteration-count: infinite;
+  z-index: 19;
+  animation: float 2s infinite;
+
+}
+
+#imSvg{
+  position: absolute;
+  position: absolute;
+  top: 45%;
+  left:70%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  stroke-dasharray: 1788;
+  z-index: 19;
+  stroke-dashoffset: 1788;
+  animation: 6s fillSvg linear ;
+  animation-iteration-count: infinite;
+  z-index: 19;
+  animation: float 2s infinite;
+
+}
+
+#myPath{
+  stroke-dasharray: 235;
+  stroke-dashoffset: 235;
+}
+.hand-bulb{
+  position: absolute;
+  top: 30%;
+  right:27% ;
+  width:100%;
+  z-index: 20;
+}
+
+.hand-bulb{
+  position: absolute;
+  top: 0;
+  /* bottom:0 ; */
+  width:1000%;
+  opacity: 0;
+}
+
+#mainImg {
+  background-image: url('./pexels-czapp-árpád-12729169.jpg');
+  /* background-color: #fff; */
+  background-size: cover;
+
+    background-position: center;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+}
+
+/* door */
 .tab {
-    height: 100vh;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-image: url('./smallDoor\ \(1\).png');
+  background-size: cover;
+  background-position: center;
+
+}
+
+@media screen and (min-width: 540px ) and (max-width: 1023){
+  .tab {
+    height: 160vh;
     width: 100vw;
     position: absolute;
+    top: 0%;
     background-image: url('./smallDoor\ \(1\).png');
     background-size: cover;
     background-position: center;
   
   }
-.hand-bulb{
-    z-index: 20;
+}
+@media screen and (min-width: 1280px ){
+  .tab {
+    height: 100vh;
+    width: 100vw;
     position: absolute;
-    left: 70%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    opacity: 0;
-    top: 90%;
-    scale: 8;
+    background-image: url('./doorFrame\ \(2\).png');
+    background-size: cover;
+    background-position: center;
+  
   }
+  
+}
+  
 
-.herologo{
-    width:40%;
-    z-index: 20;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    opacity: 0;
-    bottom: 15%;
-  }
 
-.craft{
-    color: #000000;
-    }
-    @keyframes float {
-      0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-10px);
-      }
-      100% {
-        transform: translateY(0);
-      }
-    }
-      
-    #crafting{
-      position: absolute;
-      left: 37%;
-      top: 56%;
-      transform: translateX(-50%);
-    
-      stroke-dasharray:  1853;
-      stroke-dashoffset:  1853;
-      z-index: 19;
-      animation: 6s fillSvg linear ;
-      animation-iteration-count: infinite;
-      z-index: 19;
-      animation: float 2s infinite;
-    
-    }
-    
-    #brandSvg{
-    
-      position: absolute;
-      left: 49%;
-      top: 56%;
-      transform: translateX(-50%);    
-      stroke-dasharray: 1125;
-      z-index: 19;
-      stroke-dashoffset: 1125;
-      animation: 6s fillSvg linear ;
-      animation-iteration-count: infinite;
-      z-index: 19;
-      
+@media screen and (max-width: 500px) {
+  .center{
+  
+      height: 300px;
+      width: 300px;
      
-    
+  
     }
-    
-    #imSvg{
-      position: absolute;
-      position: absolute;
-      left: 54%;
-      top: 56%;
-     transform: translateX(-50%);
-    
-      stroke-dasharray: 1788;
-      z-index: 19;
-      stroke-dashoffset: 1788;
-      animation: 6s fillSvg linear ;
-      animation-iteration-count: infinite;
-      z-index: 19;
-      animation: float 2s infinite;
-    
-    }
-    
-    #mainImg {
-      background-image: url('./pexels-czapp-árpád-12729169.jpg');
-      /* background-color: #fff; */
-      background-size: cover;
-    
-        background-position: center;
-      height: 100%;
-      width: 100vw;
-    
-    }
-   
-
+}
 
 /* Banner Section Styles */
 .banner-section {
@@ -1569,32 +1618,6 @@ footer {
   }
 
   /* dropdown media query for mobile screens */
-
-@media screen and (min-width: 540px ) and (max-width: 1023px){
-    .tab {
-      height: 160vh;
-      width: 100vw;
-      position: absolute;
-      top: 0%;
-      background-image: url('./smallDoor\ \(1\).png');
-      background-size: cover;
-      background-position: center;
-    
-    }
-  }
-  
-  @media screen and (min-width: 1024px ){
-    .tab {
-      height: 100vh;
-      width: 100vw;
-      position: absolute;
-      background-image: url('./doorFrame\ \(2\).png');
-      background-size: cover;
-      background-position: center;
-    
-    }
-    
-  }
 
   
   /* banner section media query */
