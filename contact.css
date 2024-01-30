@@ -103,8 +103,8 @@ body {
 
 #navbar.sticky .nav-middle a:hover,
 #navbar.sticky .social-icon span:hover,
-#navbar.sticky .contact-btn:hover,
-#navbar.sticky #menu:hover {
+#navbar.sticky .contact-btn:hover
+ {
 color: #ffcc00; /* Color on hover */
 }
 #navbar.sticky .contact-btn:hover {
@@ -121,64 +121,65 @@ color: #ffcc00; /* Color on hover */
 /* dropdown menu */
 
 .dropdown_menu{
-position: absolute;
-right: 2rem;
-top: 105%;
-width: 40%;
-background-color: #520088;
-backdrop-filter: blur(10px);
-border-radius: 10px;
-overflow: hidden;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-gap: 20px;
-padding: 10% 0%;
-visibility: hidden;
-}
-
-
-    
-.links{
-
-  width: 100%;
+  position: absolute;
+  right: 2rem;
+  top: 105%;
+  width: 40%;
+  background-color: #9b04ff74;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
- 
-}
-
-.dropdown_menu a,.dropdown_menu i{
-
-  text-decoration: none;
-  color: #ffffff;
-
-}
-
-.cont-btn{
-  color: white;
-
-  width: 80%;
-  padding: 10px 15px;
-  /* Style your button */
-
-  background-color: #ffffff;
-  border: none;
-  border-radius: 2px;
-  font-weight: 700;
-  color: #520088;
-}
-
-.icons{
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-padding: 5px;
-max-width: 70%;
-}
+  gap: 20px;
+  padding: 10% 0%;
+  visibility: hidden;
+  }
+  
+  
+      
+  .links{
+  
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   
+  }
+  
+  .dropdown_menu a,.dropdown_menu i{
+  
+    text-decoration: none;
+    color: #ffffff;
+  
+  }
+  
+  .dropdown_menu .cont-btn  {
+    
+    color: #520088;
+    width: 80%;
+    padding: 10px 15px;
+    /* Style your button */
+  
+    background-color: #ffffff;
+    border: none;
+    border-radius: 2px;
+    font-weight: 700;
+    text-align: center;
+    
+  }
+  
+  .icons{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  padding: 5px;
+  max-width: 70%;
+  }
 /* box */
 .box{
   height: 200vh;
@@ -251,100 +252,411 @@ max-width: 70%;
   color: #520088 !important;
 }
 
-  /* contact us */
+ /* contact us */
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80vh;
+  width: 100vw;
+  position: relative;
+background-color: #520088;
+overflow: hidden;
+}
+
+.faqs,
+.contact-form {
+  width: 50vw;
+}
+
+.faqs {
+  display: flex;
+  justify-content: end;
+background-color: #520088;
+
+  
+}
+.faq-inner {
+  /* Add additional styling if needed */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 5%;
+  z-index: 1;
+
+  width: 80%;
+  background-image: url("./images/mic.jpg");
+  background-size: 30%;
+}
+
+.faq-inner h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #ffffff;
+  font-size: clamp(1rem, 5vw, 5rem);
+}
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-answer {
+  display: none; /* Initially hide the answer */
+}
+
+.faq-item:hover .faq-answer {
+  display: block; /* Show answer on hover */
+}
+
+.contact-form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+padding: 10px;
+background-color: #520088;
+
+
+}
+
+form {
+
+  max-height: 80vh;
+  border-radius: 3px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  font-size: clamp(1rem, 5vw, 2rem);
+}
+
+.contact-form form {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffcc00;
+  width: 90%;
+  height: 90%;
+}
+
+.contact-form input,
+.contact-form button,
+.contact-form textarea {
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ffcc0000;
+  width: 80%;
+  font-family: "Open Sans";
+}
+.contact-form textarea {
+  border: 1px solid rgb(255, 255, 255);
+}
+.contact-form button {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: 1px solid white;
+  padding: 20px 40px;
+  width: 80%;
+}
+.contact-form button:hover {
+  font-size: 900;
+  background-color: #520088;
+  color: white;
+  border: 1px solid white;
+  padding: 20px 40px;
+}
+
+/* cta */
+.cta-section {
+  position: relative;
+  display: flex;
+  background: rgb(49,0,82);
+background: linear-gradient(180deg, rgba(49,0,82,1) 0%, rgba(89,0,148,1) 100%);
+  color: white;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.cta-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+.cta-left {
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  padding: 10%;
+}
+.cup {
+  width: 30%;
+  margin-left: 8%;
+  animation: float 1.5s infinite ease-in-out;
+}
+
+.cta-right {
+    background: rgb(168,37,255);
+    background: linear-gradient(180deg, rgba(168,37,255,1) 0%, rgba(82,0,136,1) 100%);
+}
+
+.cta-left h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #dadada;
+  font-family: "Montserrat", sans-serif;
+
+  font-weight: 700;
+  font-size: clamp(1rem, 5vw, 2.5rem);
+  /* Additional styling if needed */
+}
+.cta-left p {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  letter-spacing: 2px;
+}
+.cta-right p {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  letter-spacing: 2px;
+  text-align: start;
+  font-size: clamp(0.5rem, 2.5vw, 1.2rem); /* Adjust the values as needed */
+  /* Additional styling if needed */
+}
+
+.cta-left p {
+  
+    color: #ffcc00;
+   
+}
+
+.cta-right span{
+        color: #ffcc00;
+        font-size: 1.2rem;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-around; /* Space out the footer parts */
+  align-items: start; /* Align content to the top */
+  height: 60vh;
+  padding: 20px;
+  background-color: white;
+  color: #520088;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.footer-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; /* Distribute space around content */
+  height: 100%; /* Ensure each part takes full height */
+  padding: 10px;
+  color: #520088;
+}
+
+.footer-logo {
+  width: 300px; /* Adjust as needed */
+  height: auto;
+  margin-bottom: 20px; /* Space below the logo */
+}
+
+#footer-part2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #520088;
+}
+
+#footer-part2 ul li {
+  margin-bottom: 10px; /* Space between links */
+  color: #520088;
+}
+
+#footer-part2 ul li a {
+  color: #520088;
+  text-decoration: none;
+}
+
+.social-media-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #520088;
+}
+
+.social-media-links a {
+  margin-bottom: 10px; /* Space between social media links */
+  color: white;
+  text-decoration: none;
+  color: #520088;
+}
+
+/* animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+@media screen and (max-width: 653px) {
   .contact-section {
     display: flex;
-    flex-wrap: wrap;
-    height: 80vh;
-    width: 100vw;
-    position: relative;
-  }
-  
-  .faqs,
-  .contact-form {
-    width: 50vw;
-  }
-  
-  .faqs {
-    display: flex;
-    justify-content: end;
-    background-color: #b2d5f3;
-  }
-  .faq-inner {
-    /* Add additional styling if needed */
-    position: relative;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    padding: 5%;
-    z-index: 1;
-  
-    width: 80%;
-    background-image: url("./images/mic.jpg");
-    background-size: 30%;
-  }
-  
-  .faq-inner h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 4rem;
-    font-weight: 900;
-    color: #ffffff;
-    font-size: clamp(1rem, 5vw, 5rem);
-  }
-  .faq-item {
-    margin-bottom: 20px;
-  }
-  
-  .faq-answer {
-    display: none; /* Initially hide the answer */
-  }
-  
-  .faq-item:hover .faq-answer {
-    display: block; /* Show answer on hover */
-  }
-  
-  .contact-form {
-    position: relative;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #b2d5f3;
-    padding: 20px;
-    
+   gap:50px;
+    min-height: 150vh;
+    width: 100vw;
   }
-  
-  form{
-    max-height: 60vh;
+  .contact-form {
+    height: 50%;
+    width: 100vw;
   }
-  
-  .contact-form h2 {
-    margin-bottom: 20px;
-    text-align: center;
-    color: white;
-    font-size: clamp(1rem, 5vw, 2rem);
-  }
-  
   .contact-form form {
-    padding: 2rem 1rem;
+    height: 100%;
+    padding: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #ffcc00;
-    width: 70%;
+    width: 100%;
   }
-  
+  .faqs {
+    height: 40%;
+    width: 100vw;
+  }
+  .faqs {
+    display: flex;
+    justify-content: center;
+ 
+  }
+  .faqs .faq-inner h1 {
+    font-size: 2rem;
+  }
+
   .contact-form input,
-  .contact-form button,
   .contact-form textarea {
     border: none;
     border-bottom: 1px solid rgb(255, 255, 255);
     margin-bottom: 20px;
-    padding: 10px;
     background-color: #ffcc0000;
+    padding: 2%;
+    font-size: 0.7rem;
+    width: 100%;
+  }
+  .contact-form textarea {
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  .contact-form button {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    padding: 10px;
+    width: 100%;
+  }
+
+/*  */
+
+  /* cta section starts here */
+
+  .cta-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .cta-left,
+  .cta-right {
+    width: 100%;
+    height: 50%;
+  }
+  .cta-right p {
+    font-size: 0.8rem;
+  }
+
+
+
+.cta-right span{
+        color: #ffcc00;
+        font-size: 1.2rem;
+}
+
+  /* footer section starts here */
+  footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+    text-align: center;
+  }
+  .footer-logo {
     width: 80%;
-    font-family: "Open Sans";
+  }
+  .footer-part {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer-part h4 {
+    font-size: 1rem;
+    margin-bottom: 5%;
+  }
+}
+
+/* screen size upto 768 */
+@media screen and (min-width: 654px) and (max-width: 768px) {
+  .contact-section,
+  .faq-inner {
+    height: 60vh;
+  }
+
+  .contact-form form {
+    height: 80%;
+  }
+  .contact-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-bottom: 20px;
+    background-color: #ffcc0000;
+    padding: 2%;
+    font-size: 0.7rem;
+    width: 100%;
   }
   .contact-form textarea {
     border: 1px solid rgb(255, 255, 255);
@@ -353,296 +665,7 @@ max-width: 70%;
     background-color: transparent;
     color: rgb(255, 255, 255);
     border: 1px solid white;
-    padding: 20px 40px;
-    width: 80%;
-  }
-  .contact-form button:hover {
-    font-size: 900;
-    background-color: #520088;
-    color: white;
-    border: 1px solid white;
-    padding: 20px 40px;
-  }
-  
-  /* cta */
-  .cta-section {
-    position: relative;
-    display: flex;
-    background-color: #40006b;
-    color: white;
-    box-sizing: border-box;
-    width: 100%;
-  }
-  
-  .cta-right {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10%;
-  }
-  
-  .cta-left {
-    position: relative;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    text-align: center;
-    padding: 10%;
-  }
-  .cup {
-    width: 30%;
-    margin-left: 8%;
-    animation: float 1.5s infinite ease-in-out;
-  }
-  
-  .cta-right {
-    background-color: #1e0131;
-  }
-  
-  .cta-left h1 {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    color: #dadada;
-    font-family: "Montserrat", sans-serif;
-  
-    font-weight: 700;
-    font-size: clamp(1rem, 5vw, 2.5rem);
-    /* Additional styling if needed */
-  }
-  .cta-left p {
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans";
-    letter-spacing: 2px;
-  }
-  .cta-right p {
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans";
-    letter-spacing: 2px;
-    text-align: start;
-    font-size: clamp(0.5rem, 2.5vw, 1.2rem); /* Adjust the values as needed */
-    /* Additional styling if needed */
-  }
-  
-  .cta-right span {
-    color: white;
-    font-weight: bold;
-  }
-  
-  /* footer */
-  footer {
-    display: flex;
-    justify-content: space-around; /* Space out the footer parts */
-    align-items: start; /* Align content to the top */
-    height: 60vh;
-    padding: 20px;
-    background-color: white;
-    color: #520088;
-    box-sizing: border-box;
-    letter-spacing: 2px;
-    font-weight: 700;
-  }
-  
-  .footer-part {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; /* Distribute space around content */
-    height: 100%; /* Ensure each part takes full height */
     padding: 10px;
-    color: #520088;
-  }
-  
-  .footer-logo {
-    width: 300px; /* Adjust as needed */
-    height: auto;
-    margin-bottom: 20px; /* Space below the logo */
-  }
-  
-  #footer-part2 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    color: #520088;
-  }
-  
-  #footer-part2 ul li {
-    margin-bottom: 10px; /* Space between links */
-    color: #520088;
-  }
-  
-  #footer-part2 ul li a {
-    color: #520088;
-    text-decoration: none;
-  }
-  
-  .social-media-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: #520088;
-  }
-  
-  .social-media-links a {
-    margin-bottom: 10px; /* Space between social media links */
-    color: white;
-    text-decoration: none;
-    color: #520088;
-  }
-  
-  /* animation */
-  @keyframes float {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-
-
-/* media query for common sections */
-/* contact
-   cta
-   footer
-    */
-
-    @media screen and (max-width: 653px) {
-      .contact-section{
-        display: flex;
-        flex-direction: column;
-        min-height: 120vh;
-        width: 100vw;
-      }
-    .contact-form{
-        height: 50% ;
-        width: 100vw;
-      }
-      .contact-form form {
-        height: 100%;
-        padding: 10% ;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: #ffcc00;
-        width: 100%;
-    }
-      .faqs{
-        height: 50%;
-        width: 100vw;
-      }
-      .faqs {
-        display: flex;
-        justify-content: center;
-        background-color: #b2d5f3;
-    }
-      .faqs .faq-inner h1{
-        font-size: 2rem;
-      }
-    
-      .contact-form input,  .contact-form textarea{
-      border: none;
-      border-bottom: 1px solid rgb(255, 255, 255);
-      margin-bottom: 20px;
-      background-color: #ffcc0000;
-      padding: 2%;
-      font-size: 0.7rem;
-      width: 100%;
-    }
-    .contact-form textarea{
-      border: 1px solid rgb(255, 255, 255) ;
-    }
-    
-    .contact-form button {
-        background-color: transparent;
-        color: rgb(255, 255, 255);
-        border: 1px solid white;
-        padding: 10px;
-        width: 100%;
-    }
-    
-    /* cta section starts here */
-    
-    .cta-section {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-    }
-    .cta-left ,.cta-right{
-      width: 100%;
-      height: 50%;
-    }
-    .cta-right p{
-      font-size: 0.8rem;
-    }
-    
-    /* footer section starts here */
-    footer {
-      display: flex;
-      flex-direction: column;
-      font-size: 0.6rem;
-    text-align: center;
-    } 
-    .footer-logo  {
-      width: 80%;
-    }
-    .footer-part {
-    justify-content:center ;
-    align-items: center;
     width: 100%;
-    }
-    
-    .footer-part h4{
-      font-size: 1rem;
-      margin-bottom: 5%;
-    }
-    }
-    
-    
-    
-    /* screen size upto 768 */
-    @media screen and (min-width: 654px) and (max-width: 768px){
-      .contact-section, .faq-inner{
-    height: 60vh;
-    }
-    
-    
-    
-    .contact-form form{
-      height: 80%;
-    }
-    .contact-form h2 {
-      margin-bottom: 20px;
-      text-align: center;
-      color: white;
-      font-size: 1rem;
-    }
-    .contact-form input,  .contact-form textarea{
-      border: none;
-      border-bottom: 1px solid rgb(255, 255, 255);
-      margin-bottom: 20px;
-      background-color: #ffcc0000;
-      padding: 2%;
-      font-size: 0.7rem;
-      width: 100%;
-    }
-    .contact-form textarea{
-      border: 1px solid rgb(255, 255, 255) ;
-    }
-    .contact-form button {
-      background-color: transparent;
-      color: rgb(255, 255, 255);
-      border: 1px solid white;
-      padding: 10px;
-      width: 100%;
-    }
-    }
+  }
+}
