@@ -30,7 +30,7 @@
     referrerpolicy="no-referrer"
   />
     <link rel="stylesheet" href="./contact.css">
-    
+    <link rel="stylesheet" href="./footer.css">
     
 </head>
 <body>
@@ -150,6 +150,11 @@
 
   </nav>
 
+  <!-- whatsapp integration -->
+
+  <div class="wtsapp">
+    <a href="https://wa.me/918788857994"><img src="./whatsapp-png.png" alt=""></a>
+  </div>
   
       <!-- hero bg -->
 
@@ -174,12 +179,13 @@
     <!-- Add more FAQ items here -->
   </div>
   <div class="contact-form">
-    <form>
+    <form action="https://api.web3forms.com/submit" method="POST">
       <h2>REACH OUT VIA THE FORM BELOW</h2>
-      <input type="text" placeholder="Full Name" name="fullname" />
-      <input type="email" placeholder="Email" name="email" />
-      <input type="text" placeholder="Phone" name="phone" />
-      <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+      <input type="hidden" name="access_key" value="d519ed51-a9c7-4ab3-a108-ce9a0132008d">
+      <input type="text" placeholder="Full Name" name="fullname" required />
+      <input type="email" placeholder="Email" name="email" required />
+      <input type="text" placeholder="Phone" name="phone" required />
+      <textarea name="message" cols="30" rows="10" placeholder="Message" required ></textarea>
       <button class="form-btn" type="submit">Submit Form</button>
     </form>
   </div>
