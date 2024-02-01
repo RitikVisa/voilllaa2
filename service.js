@@ -52,6 +52,7 @@ toggleDropdownVisibility();
 
 
 
+
 // slider animation below
 let currentSlide = 0;
       const slides = document.querySelectorAll(".slide");

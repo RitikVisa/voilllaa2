@@ -6,7 +6,7 @@
 
 html,body{
     scroll-behavior: smooth;
-    background-color: blueviolet;
+   
 }
 
 /* .nav-logo{
@@ -60,6 +60,7 @@ html,body{
     right: 0;
     left: 0;
     transition: background-color 0.3s; /* Smooth background color transition */
+    z-index: 20;
   }
   
   .nav-left,
@@ -137,8 +138,7 @@ html,body{
 
   #navbar.sticky .nav-middle a:hover,
 #navbar.sticky .social-icon span:hover,
-#navbar.sticky .contact-btn:hover,
-#navbar.sticky #menu:hover {
+#navbar.sticky .contact-btn:hover {
   color: #ffcc00; /* Color on hover */
 }
 #navbar.sticky .contact-btn:hover {
