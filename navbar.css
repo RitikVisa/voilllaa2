@@ -9,44 +9,6 @@ html,body{
    
 }
 
-/* .nav-logo{
-    display: none;
-}
-.nav-logo2{
-    display: block;
-}
-
-#navbar{
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    padding: 1% 5%;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-}
-
-.nav-left, .nav-middle{
-    display: flex;
-    justify-content: center;
-  gap: 20px;
-    width: 30%;
-}
-
-.nav-right{
-    display: flex;
-    justify-content: end;
-    gap: 20px;
-    width: 30%;
-}
-
-.nav-middle a{
- color: white;
- text-decoration: none;
-} */
-
 
 /* Initial styles for navbar */
 #navbar {
@@ -192,19 +154,18 @@ visibility: hidden;
  
   }
 
-  .cont-btn{
-    color: white;
-
+.cont-btn{
+  
     width: 80%;
     padding: 10px 15px;
-    /* Style your button */
-
-    background-color: #ffffff;
+    background-color: #ffcc00;
     border: none;
     border-radius: 2px;
-    font-weight: 700;
-    color: #520088;
+/* color: #520088; */
+   
   }
+
+
 
   .icons{
     display: flex;
@@ -219,7 +180,9 @@ visibility: hidden;
     width: 100vw;
   }
 
-
+  .drop-btn{
+    color: #520088;
+  }
   
   /* responsive */
   @media(max-width:768px){

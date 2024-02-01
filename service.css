@@ -102,7 +102,7 @@ html,body{
   .button {
     position: absolute;
     left: 10%; /* Adjust the horizontal position as needed */
-    bottom: 50px; /* Adjust the vertical position from the bottom as needed */
+    bottom: 10%; /* Adjust the vertical position from the bottom as needed */
     padding: 10px 20px;
     background-color: #520088; /* Background color of the button */
     color: white; /* Text color */
